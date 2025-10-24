@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Classroom</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    img {
+      position: absolute;
+      width: 150px;
+      height: auto;
+      animation: bounceX 3s linear infinite alternate,
+                 bounceY 2s linear infinite alternate;
+    }
+
+    @keyframes bounceX {
+      0% { left: 0; }
+      100% { left: calc(100vw - 150px); }
+    }
+
+    @keyframes bounceY {
+      0% { top: 0; }
+      100% { top: calc(100vh - 100px); }
+    }
+
+    .created-by {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-family: sans-serif;
+      color: white;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/dvd_logo.png" alt="DVD Logo">
+  <p class="created-by">created by aidan lenahan</p>
+</body>
+</html>
